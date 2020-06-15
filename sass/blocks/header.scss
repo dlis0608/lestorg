@@ -1,0 +1,122 @@
+.header {
+  background: url("../../img/header-bg.jpg") top center no-repeat;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  &__topline {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  &__logo {
+    margin-right: 60px;
+  }
+
+  &__menu {
+    ul {
+      display: flex;
+      align-items: center;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+
+      a {
+        display: block;
+        color: #000000;
+        font-size: 14px;
+        text-decoration: none;
+        margin-right: 35px;
+        margin-left: 35px;
+
+        &:hover {
+          color: green;
+        }
+      }
+    }
+  }
+
+  &__main {
+    width: 500px;
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 70px;
+      color: $brown;
+      margin: 0 0 45px;
+      font-weight: 300;
+    }
+
+  }
+
+  &__text {
+    width: 365px;
+
+    p {
+      margin: 0 0 20px;
+      line-height: 1.35;
+
+      span {
+        color: $green;
+        white-space: nowrap;
+      }
+
+    }
+
+  }
+
+  &__list {
+    margin: 0 0 45px;
+    padding: 0;
+    list-style-type: none;
+
+    li {
+      margin-bottom: 25px;
+      position: relative;
+      padding-left: 90px;
+      padding-top: 5px;
+      font-size: 16px;
+      color: #000000;
+
+      span {
+        color: $green;
+        font-weight: 700;
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+
+      &:first-of-type {
+        &:before {
+          background: url(../../img/header-item1.jpg);
+          width: 71px;
+          height: 53px;
+        }
+      }
+
+      &:nth-of-type(2) {
+        &:before {
+          background: url(../../img/header-item2.jpg);
+          width: 65px;
+          height: 62px;
+        }
+      }
+
+      &:nth-of-type(3) {
+        &:before {
+          background: url(../../img/header-item3.jpg);
+          width: 62px;
+          height: 60px;
+        }
+      }
+    }
+  }
+
+  &__button {
+    margin-top: 35px;
+  }
+}
