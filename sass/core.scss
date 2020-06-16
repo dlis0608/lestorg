@@ -3,38 +3,107 @@
 /**
  * Основные стили
  **/
+* {
+  box-sizing: border-box
+}
 
 html {
-	font-size: 16px;
+  font-size: 16px;
 }
 
 body {
-	font-family: 'Roboto', 'Arial', sans-serif;
-	overflow-wrap: break-word;
-	word-wrap: break-word;
+  font-family: 'Roboto', 'Arial', sans-serif;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 .container {
-	@include min-max(320px, 100%, 0);
+  @include min-max(320px, 100%, 0);
 }
 
 .wrap {
-	@include min-max(320px, 1170px, 15px);
+  @include min-max(320px, 1170px, 15px);
 }
 
 .button-green {
-	background: linear-gradient(to bottom, #00ba5d, #006b35);
-	-webkit-border-radius: 7px;
-	-moz-border-radius: 7px;
-	border-radius: 7px;
-	color: #ffffff;
-	border: none;
-	border-bottom: 5px solid #004a20;
-	cursor: pointer;
-	padding: 12px 35px 12px;
-	box-shadow: 0 0 38px 20px rgba(#00af57, 0.18);
+  background: linear-gradient(to bottom, #00ba5d, #006b35);
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+  color: #ffffff;
+  border: none;
+  border-bottom: 5px solid #004a20;
+  cursor: pointer;
+  padding: 12px 35px 12px;
+  box-shadow: 0 0 38px 20px rgba(#00af57, 0.18);
 
-	&:hover {
-		background: linear-gradient(to bottom, #00e070, #007f3f);
-	}
+  &--reverse {
+    box-shadow: 0 0 30px 5px rgba(#006b35, .5) inset;
+  }
+
+  &:hover {
+    background: linear-gradient(to bottom, #00e070, #007f3f);
+  }
+}
+
+.section-title {
+
+  border-bottom: 3px solid $green;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+
+  h2 {
+    font-family: 'Myriad Pro', sans-serif;
+    margin: 0;
+    color: $brown;
+    font-size: 40px;
+
+  }
+}
+
+.section-subtitle {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+@media screen and (max-width: 1169px) {
+  .wrap {
+    width: 970px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 969px) {
+  .wrap {
+    width: 750px;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .wrap {
+    width: 480px;
+  }
+  .section-title {
+
+    h2 {
+
+      font-size: 35px;
+
+    }
+  }
+}
+@media screen and (max-width: 749px) {
+  .wrap {
+    width: 320px;
+  }
+  .section-title {
+
+    h2 {
+
+      font-size: 30px;
+      text-align: center;
+
+    }
+  }
 }

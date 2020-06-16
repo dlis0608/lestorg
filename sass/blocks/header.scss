@@ -2,6 +2,12 @@
   background: url("../../img/header-bg.jpg") top center no-repeat;
   padding-top: 15px;
   padding-bottom: 15px;
+  margin-bottom: 40px;
+
+  &-fixed {
+    display: none;
+    background: #f5f9f7;
+  }
 
   &__topline {
     display: flex;
@@ -118,5 +124,111 @@
 
   &__button {
     margin-top: 35px;
+  }
+}
+
+@media screen and (max-width: 1169px) {
+  .header {
+    background: url("../../img/header-bg970.jpg") center 40px no-repeat;
+
+    &__button {
+      margin-top: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 969px) {
+  .header {
+    background: url("../../img/header-bg750.jpg") center 95px no-repeat;
+
+    &__topline {
+      margin-bottom: 20px;
+    }
+
+    &__logo {
+      margin-right: 40px;
+    }
+
+    &__menu {
+      ul {
+        a {
+
+          margin-right: 25px;
+          margin-left: 25px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .header {
+    background: url("../../img/header-bg480.jpg") center 95px no-repeat;
+    padding-top: 65px;
+
+    &__main {
+      width: 100%;
+      max-width: 425px;
+      h1 {
+        font-size: 60px;
+      }
+    }
+
+    &__topline {
+      display: none;
+    }
+
+    &-fixed {
+      display: flex;
+      position: fixed;
+      z-index: 9999;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      height: 46px;
+
+      &__phone {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 46px;
+        height: 46px;
+        background: url(../../img/mobile-phone.svg) center center no-repeat;
+      }
+
+      &__menu {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 46px;
+        height: 46px;
+        background: url(../../img/ham.svg) center center no-repeat;
+      }
+
+      &__logo {
+        width: 135px;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 479px) {
+  .header {
+    background: url("../../img/header-bg320.jpg") center 50px no-repeat;
+
+    &__main {
+
+      h1 {
+        font-size: 40px;
+        text-align: center;
+      }
+    }
+    &__text {
+      width: 100%;
+    }
   }
 }

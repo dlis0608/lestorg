@@ -1,0 +1,182 @@
+.footer {
+  background: #003e1f;
+
+  &__info {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #466e53;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__meta {
+    color: #e8ddcc;
+    font-size: 14px;
+
+    a, span.footer__phone {
+      color: #e8ddcc;
+      font-weight: 700;
+      font-size: 16px;
+    }
+
+    a {
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    &-line {
+      &:first-child {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  &__divider {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  &__logostudia {
+    text-align: center;
+
+    a {
+      display: flex;
+      flex-direction: column;
+      color: rgba(#e8ddcc, .4);
+      font-size: 10px;
+      text-align: center;
+      text-decoration: none;
+      transition-property: color;
+      transition-duration: .5s;
+
+      &:hover {
+        color: rgba(#e8ddcc, 1);
+      }
+    }
+
+    img {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__copy {
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &-text {
+      color: rgba(#e8ddcc, .4);
+      font-size: 14px;
+      text-align: center;
+      margin-right: 90px;
+    }
+
+    &-logostudia {
+      display: none;
+    }
+  }
+
+  &__stat {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__privacy {
+    color: #e8ddcc;
+    font-size: 12px;
+    margin-bottom: 15px;
+    white-space: nowrap;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+@media screen and (max-width: 969px) {
+  .footer {
+    &__logostudia {
+      display: none;
+    }
+
+    &__copy {
+      &-logostudia {
+        display: block;
+      }
+
+      &-text {
+        width: 450px;
+      }
+    }
+
+    &__stat {
+      display: none;
+    }
+
+    &__privacy {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .footer {
+    &__logo {
+      margin-bottom: 15px;
+    }
+
+    &__info {
+      flex-direction: column;
+    }
+
+    &__meta {
+      &-line {
+        text-align: center;
+        flex-direction: column;
+        display: flex;
+
+        span, a {
+          white-space: nowrap;
+        }
+
+        a {
+          display: inline-block;
+          margin-top: 10px;
+        }
+      }
+    }
+
+    &__divider {
+      display: none;
+    }
+
+    &__copy {
+      flex-direction: column;
+
+      &-text {
+        margin-right: 0;
+        margin-bottom: 15px;
+      }
+    }
+
+    &__copyright {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .footer {
+    &__phone {
+      margin-top: 10px;
+    }
+
+    &__copy-text {
+      width: 100%;
+    }
+
+  }
+}

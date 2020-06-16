@@ -1,15 +1,26 @@
 <!DOCTYPE html>
+
+
+
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0, width=device-width">
     <title>Лесторг</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.min.css" type="text/css"/>
 
 </head>
 <body>
-<div class="container">
+<div class="header-fixed">
+    <a href="" class="header-fixed__phone"></a>
+    <div class="header-fixed__logo">
+        <img src="img/header-logo.svg" alt="">
+    </div>
+    <div class="header-fixed__menu"></div>
+</div>
+<div class="container" id="panel">
     <header class="header">
         <div class="wrap">
             <div class="header__topline">
@@ -46,7 +57,7 @@
     </header>
     <section class="catalog">
         <div class="wrap">
-            <div class="section-title"><h2>Каталог</h2></div>
+            <div class="section-title catalog__title"><h2>Каталог</h2></div>
             <ul class="catalog__list">
                 <li><a href=""><img src="img/catalog/pol-doska.jpg" alt=""><span>Половая доска</span></a></li>
                 <li><a href=""><img src="img/catalog/imit-brus.jpg" alt=""><span>Имитация бруса</span></a></li>
@@ -71,65 +82,72 @@
         </div>
     </section>
     <section class="advantages">
-        <div class="wrap">
-            <div class="advantages__content">
-                <div class="section-title">
-                    <h2>Что нравится нашим клиентам больше всего:</h2>
-                </div>
-                <ul class="advantages__list">
-                    <li>Идеальная поверхность у строганых материалов</li>
-                    <li>Высокое качество обрезной доски и высокоточный распил</li>
-                    <li>Большой выбор пиломатериалов для стройки и ремонта</li>
-                    <li>Возможность купить двери, цемент, паро- и теплоизоляцию</li>
-                </ul>
+        <div class="wrap advantages__wrap">
+
+            <div class="section-title advantages__title">
+                <h2>Что нравится нашим клиентам больше всего:</h2>
             </div>
+            <ul class="advantages__list">
+                <li>Идеальная поверхность у строганых материалов</li>
+                <li>Высокое качество обрезной доски и высокоточный распил</li>
+                <li>Большой выбор пиломатериалов для стройки и ремонта</li>
+                <li>Возможность купить двери, цемент, паро- и теплоизоляцию</li>
+            </ul>
         </div>
     </section>
     <section class="production">
         <div class="wrap">
-            <div class="section-title">
+            <div class="section-title production__title">
                 <h2>Как производятся материалы Лесторг?</h2>
             </div>
-            <div class="production-slider">
-                <div class="production-slider__item"><img src="img/slider/slide1.jpg" alt=""></div>
-                <div class="production-slider__item"><img src="img/slider/slide1.jpg" alt=""></div>
-                <div class="production-slider__item"><img src="img/slider/slide1.jpg" alt=""></div>
-                <div class="production-slider__item"><img src="img/slider/slide1.jpg" alt=""></div>
+            <div class="production__inner">
+                <div class="production-slider">
+                    <div class="production-slider__item"><img src="img/slider/slide1.jpg" alt=""></div>
+                    <div class="production-slider__item"><img src="img/slider/slide1.jpg" alt=""></div>
+                    <div class="production-slider__item"><img src="img/slider/slide1.jpg" alt=""></div>
+                    <div class="production-slider__item"><img src="img/slider/slide1.jpg" alt=""></div>
+                </div>
+                <ul class="production__list">
+                    <li>Пиломатериал в Рязани, который вы покупаете у нас, изготавливается на современном ЧПУ
+                        оборудовании.
+                        Кроме экономии, такое производство обеспечивает идеальное качество.
+                    </li>
+                    <li>Кроме оператора станка, каждый погонный метр изделий проверяет контролер качества, авы получаете
+                        только
+                        отсортированный материал.
+                    </li>
+                    <li>Мы знаем, как нужно содержать лес и всегда поддерживаем необходимый уровень влажности и
+                        температуры.
+                        Поэтому ваша постройка, отделка или сооружение будут состоять из идеально ровной доски.
+                    </li>
+                </ul>
+                <div class="production__text">
+                    <p>Наш лес заготавливается в Архангельской, Вологодской, Кировской, Пермской областях и республике
+                        Коми.
+                        У
+                        нас вы покупаете пиломатериалы в Рязани, которые сделаны для эстетики и надежности ваших
+                        сооружений
+                        из
+                        дерева.</p>
+                    <p><span>Мы готовы отгрузить выбранные вами пиломатериалы уже сегодня.</span> Звоните: 8 (903)
+                        640-99-00
+                    </p>
+                </div>
             </div>
-            <ul class="production__list">
-                <li>Пиломатериал в Рязани, который вы покупаете у нас, изготавливается на современном ЧПУ оборудовании.
-                    Кроме экономии, такое производство обеспечивает идеальное качество.
-                </li>
-                <li>Кроме оператора станка, каждый погонный метр изделий проверяет контролер качества, авы получаете
-                    только
-                    отсортированный материал.
-                </li>
-                <li>Мы знаем, как нужно содержать лес и всегда поддерживаем необходимый уровень влажности и температуры.
-                    Поэтому ваша постройка, отделка или сооружение будут состоять из идеально ровной доски.
-                </li>
-            </ul>
-            <div class="production__text">
-                <p>Наш лес заготавливается в Архангельской, Вологодской, Кировской, Пермской областях и республике Коми.
-                    У
-                    нас вы покупаете пиломатериалы в Рязани, которые сделаны для эстетики и надежности ваших сооружений
-                    из
-                    дерева.</p>
-                <p><span>Мы готовы отгрузить выбранные вами пиломатериалы уже сегодня.</span> Звоните: 8 (903) 640-99-00
-                </p>
-            </div>
+
         </div>
 
 
     </section>
     <section class="faq">
         <div class="wrap">
-            <div class="section-title">
+            <div class="section-title faq__title">
                 <h2>Часто задаваемые вопросы:</h2>
             </div>
             <div class="faq__list">
                 <div class="faq__item">
                     <div class="faq__question button-green">Вы можете сделать пиломатериалы по моим размерам?</div>
-                    <div class="faq__answer button-green--reverse">Мы производитель пиломатериалов. поэтому вы не
+                    <div class="faq__answer button-green button-green--reverse hidden">Мы производитель пиломатериалов. поэтому вы не
                         переплачиваете перекупщикам
                     </div>
                 </div>
@@ -137,46 +155,46 @@
                     <div class="faq__question button-green">Я могу удостовериться в качестве пиломатериалов перед
                         покупкой
                     </div>
-                    <div class="faq__answer button-green--reverse">Мы производитель пиломатериалов. поэтому вы не
+                    <div class="faq__answer button-green button-green--reverse hidden">Мы производитель пиломатериалов. поэтому вы не
                         переплачиваете перекупщикам
                     </div>
                 </div>
                 <div class="faq__item">
                     <div class="faq__question button-green">У вас цена выше или ниже, чем у других?</div>
-                    <div class="faq__answer button-green--reverse">Мы производитель пиломатериалов. поэтому вы не
+                    <div class="faq__answer button-green button-green--reverse hidden">Мы производитель пиломатериалов. поэтому вы не
                         переплачиваете перекупщикам
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="contact">
+    <section class="contact-main">
         <div class="wrap">
-            <div class="section-title">
+            <div class="section-title contact-main__title">
                 <h2>Как заказать</h2>
             </div>
-            <div class="section-subtitle">
+            <div class="section-subtitle ">
                 Чтобы заказать пиломатериалы - заполняйте заявку ниже
             </div>
-            <div class="contact__form">
+            <div class="contact-main__form">
                 <form action="">
-                    <div class="contact__form-row">
+                    <div class="contact-main__form-row">
                         <label for="name">Имя</label><input type="text" id="name">
                     </div>
-                    <div class="contact__form-row">
+                    <div class="contact-main__form-row">
                         <label for="phone">Телефон</label><input type="text" id="phone">
                     </div>
-                    <div class="contact__form-row">
+                    <div class="contact-main__form-row">
                         <label for="message">Cooбщение</label><textarea id="message" rows="1"></textarea>
                     </div>
-                    <button type="submit" class="button-green">Отправить</button>
+                    <button type="submit" class="button-green contact-main__input">Отправить</button>
                 </form>
             </div>
         </div>
     </section>
     <section class="clients">
         <div class="wrap">
-            <div class="section-title">
+            <div class="section-title clients__title">
                 <h2>Наши клиенты</h2>
             </div>
             <ul class="clients__list">
@@ -198,7 +216,7 @@
                 <div class="footer__logo"><a href="/"><img src="img/footer-logo.svg" alt=""></a></div>
                 <div class="footer__meta">
                     <div class="footer__meta-line">
-                        © 2009-2020 «ЛесТорг» | 8 (903) 640-99-00 | <a href="">Заказать звонок</a>
+                       <span class="footer__copyright">© 2009-2020 «ЛесТорг»</span>   <span class="footer__phone"><span class="footer__divider">|</span>  8 (903) 640-99-00  <span class="footer__divider">|</span></span> <a href="">Заказать звонок</a>
                     </div>
                     <div class="footer__meta-line">
                         Рязань, 185км Окружной дороги, рынок Стройка, павильон 2-15, склад 2Б,
@@ -220,12 +238,21 @@
                         счетчик
                     </div>
                 </div>
-
+                <div class="footer__logostudia footer__copy-logostudia">
+                    <a href="https://wingsstudio.ru" target="_blank"><img src="img/logoStudia.svg" alt=""><span>Создание и продвижение сайта</span></a>
+                </div>
             </div>
         </div>
     </footer>
 </div>
+<nav id="menu" class="slide-menu">
+    <header>
+        <h2>Menu</h2>
+    </header>
+</nav>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
 <script src="js/all.min.js"></script>
+
 </body>
 </html>
 

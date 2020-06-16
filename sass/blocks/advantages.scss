@@ -1,0 +1,128 @@
+.advantages {
+  max-width: 1570px;
+  margin-left: auto;
+  margin-right: auto;
+  background: url(../../img/advantages-bg.jpg) top center no-repeat;
+  height: 427px;
+  margin-bottom: 40px;
+
+  &__wrap {
+    padding-left: 490px;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 30px 0 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+      width: 50%;
+      padding: 5px 0 0 80px;
+      margin-bottom: 50px;
+      position: relative;
+      height: 65px;
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      &:nth-of-type(1) {
+        padding-right: 40px;
+
+        &:before {
+          background: url(../../img/advantage1.jpg) 0 0 no-repeat;
+          width: 63px;
+          height: 65px;
+        }
+      }
+
+      &:nth-of-type(2) {
+        &:before {
+          background: url(../../img/advantage2.jpg) 0 0 no-repeat;
+          width: 66px;
+          height: 58px;
+        }
+      }
+
+      &:nth-of-type(3) {
+        padding-right: 40px;
+
+        &:before {
+          background: url(../../img/advantage3.jpg) 0 0 no-repeat;
+          width: 63px;
+          height: 56px;
+        }
+      }
+
+      &:nth-of-type(4) {
+        &:before {
+          background: url(../../img/advantage4.jpg) 0 0 no-repeat;
+          width: 67px;
+          height: 55px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1169px) {
+  .advantages {
+    background: url(../../img/advantages-bg960.jpg) top center no-repeat;
+    height: 360px;
+
+    &__wrap {
+      padding-left: 290px;
+    }
+  }
+}
+@media screen and (max-width: 969px) {
+  .advantages {
+    background: url(../../img/advantages-bg750.jpg) top center no-repeat;
+    height: auto;
+    padding-top: 325px;
+
+    &__wrap {
+      padding-left: 15px;
+    }
+    &__title {
+      text-align: center;
+      h2 {
+        font-family: 'Playfair Display', serif;
+      }
+
+    }
+  }
+}
+@media screen and (max-width: 749px) {
+  .advantages {
+    margin-bottom: 0;
+    &__list {
+      width: 350px;
+      padding-top: 0;
+      margin-left: auto;
+      margin-right: auto;
+      li {
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 10px;
+        &:nth-of-type(1),
+        &:nth-of-type(3) {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 479px) {
+  .advantages {
+
+    &__list {
+      width: 100%;
+    }
+  }
+}

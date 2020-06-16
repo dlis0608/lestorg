@@ -1,0 +1,37 @@
+.clients {
+  margin-bottom: 60px;
+  &__title {
+    text-align: center;
+    h2 {
+      font-family: 'Playfair Display', serif;
+    }
+  }
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    li {
+      margin-left: 25px;
+      margin-right: 25px;
+    }
+  }
+}
+@media screen and (max-width:969px) {
+  .clients {
+    &__list {
+      li {
+        margin-left: 10px;
+        margin-right: 10px;
+        &:nth-of-type(4),
+        &:nth-of-type(5),
+        &:nth-of-type(9) {
+          display: none;
+        }
+      }
+    }
+  }
+}
