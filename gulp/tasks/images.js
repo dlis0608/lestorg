@@ -7,7 +7,7 @@ module.exports = function () {
             loops: 5,
             min: 65,
             max: 70,
-            quality: 'medium'
+            quality: 'high'
           }),
           $.gp.imagemin.optipng({optimizationLevel: 3}),
           $.pngquant({quality: '65-70', speed: 5}),
