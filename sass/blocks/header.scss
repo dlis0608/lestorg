@@ -98,7 +98,7 @@
 
       &:first-of-type {
         &:before {
-          background: url(../../img/header-item1.jpg);
+          background: url(../../img/icons_sprite.jpg) -565px -0 no-repeat;
           width: 71px;
           height: 53px;
         }
@@ -106,7 +106,7 @@
 
       &:nth-of-type(2) {
         &:before {
-          background: url(../../img/header-item2.jpg);
+          background: url(../../img/icons_sprite.jpg) -367px -0 no-repeat;
           width: 65px;
           height: 62px;
         }
@@ -114,7 +114,7 @@
 
       &:nth-of-type(3) {
         &:before {
-          background: url(../../img/header-item3.jpg);
+          background: url(../../img/icons_sprite.jpg) -179px -0 no-repeat;
           width: 62px;
           height: 60px;
         }
