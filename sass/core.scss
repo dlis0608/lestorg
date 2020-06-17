@@ -66,6 +66,13 @@ body {
   margin-bottom: 35px;
 }
 
+.page {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  padding-top: 15px;
+}
+
 @media screen and (max-width: 1169px) {
   .wrap {
     width: 970px;

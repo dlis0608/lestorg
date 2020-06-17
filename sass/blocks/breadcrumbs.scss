@@ -1,0 +1,11 @@
+.breadcrumbs {
+  color: rgba(#000, .5);
+  font-size: 14px;
+  a {
+    color: rgba(#000, .5);
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

@@ -125,8 +125,129 @@
   &__button {
     margin-top: 35px;
   }
-}
 
+  &__phone {
+    margin-left: auto;
+  }
+  &-inner {
+    background-image: none;
+    background-color: #f5f9f7;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 5px;
+    &__topline {
+      margin-bottom: 0;
+      padding-top: 7px;
+      padding-bottom: 7px;
+      height: 50px;
+    }
+    &__menu {
+      display: flex;
+      height: 50px;
+    }
+    &__logo {
+      width: 140px;
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+.ico-menu {
+  position: relative;
+  &__li {
+    color: #432918;
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: none;
+    margin-right: 25px;
+    cursor: pointer;
+    position: relative;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+    &:after {
+      content: '';
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 3.5px 0 3.5px 4px;
+      border-color: transparent transparent transparent #000000;
+      position: absolute;
+      right: 0;
+      top: 23px;
+    }
+  }
+  &__hidden{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 00;
+    width: 200px;
+    padding: 10px 15px;
+    background: #f5f9f7;
+    border-top: 8px solid #fff;
+    z-index: 99999;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border-radius: 5px;
+    opacity: 0;
+    transition: 0.25s ease;
+    pointer-events: none;
+    box-shadow: 0 5px 5px 5px rgba(#000, 0.1);
+
+  }
+  .dropdown-menu {
+    margin-bottom: 10px;
+    &__title {
+      color: #808080;
+      font-size: 14px;
+      text-align: right;
+      border-bottom: 1px solid #006633;
+      padding-bottom: 3px;
+      margin-bottom: 15px;
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      a {
+        margin-left: 0;
+        margin-right: 0;
+        font-size: 14px;
+        color: #432918;
+        display: block;
+        margin-bottom: 15px;
+        &:hover {
+          color: $green;
+        }
+      }
+    }
+  }
+  &:hover {
+    .ico-menu__hidden {
+      opacity: 1;
+      top: 50px;
+      pointer-events: all;
+    }
+    .ico-menu__li {
+      &:after {
+        content: '';
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 4px 3.5px 0 3.5px;
+        border-color: #000000 transparent transparent transparent;
+        top: 24px;
+      }
+    }
+  }
+}
 @media screen and (max-width: 1169px) {
   .header {
     background: url("../../img/header-bg970.jpg") center 40px no-repeat;
