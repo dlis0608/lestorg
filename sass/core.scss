@@ -25,6 +25,13 @@ body {
   @include min-max(320px, 1170px, 15px);
 }
 
+h3 {
+  font-size: 20px;
+  text-align: center;
+  font-family: Roboto, sans-serif;
+  margin-bottom: 15px;
+  margin-top: 0;
+}
 .button-green {
   background: linear-gradient(to bottom, #00ba5d, #006b35);
   -webkit-border-radius: 7px;
@@ -80,13 +87,11 @@ body {
     margin-right: auto;
   }
 }
-
 @media screen and (max-width: 969px) {
   .wrap {
     width: 750px;
   }
 }
-
 @media screen and (max-width: 749px) {
   .wrap {
     width: 480px;
@@ -100,7 +105,7 @@ body {
     }
   }
 }
-@media screen and (max-width: 749px) {
+@media screen and (max-width: 479px) {
   .wrap {
     width: 320px;
   }
